@@ -1,7 +1,7 @@
 <body>
 
   <p id="notice"></p>
-
+ 
   <h1>Books</h1>
   <table>
    <thead>
@@ -18,7 +18,17 @@
       <td><%= book.body %></td>
       <td>
        <span>
-        <%= link_to "show", book_path(book.id) %>
+        <%= link_to "Show", book_path(book.id) %>
+       </span>
+      </td>
+      <td>
+       <span>
+        <%= link_to "Edit", edit_book_path(book) %>
+       </span>
+      </td>
+      <td>
+       <span>
+        <%= link_to "Destroy", book_path(book), method: :delete, "data-confirm" => "Are you sure？"%>
        </span>
       </td>
      </tr>

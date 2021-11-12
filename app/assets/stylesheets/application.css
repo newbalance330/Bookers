@@ -55,3 +55,7 @@ th {
 label {
     display: block;
 }
+
+#notice {
+    color: green;
+}
