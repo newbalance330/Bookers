@@ -10,28 +10,34 @@
      <th>Body</th>
      <th colspan="3"></th>
     </tr>
-  </thead>
-   <% @books.each do |book| %>
-    <td><%= book.title %></td>
-    <td><%= book.body %></td>
-    <td>
-
-    </td>
-   <% end %>
+   </thead>
+   <tbody>
+    <% @books.each do |book| %>
+     <tr>
+      <td><%= book.title %></td>
+      <td><%= book.body %></td>
+      <td>
+      <a></a>
+      <a></a>
+      </td>
+     </tr>
+    <% end %>
+   </tbody>
   </table>
 
   <h2>New book</h2>
-   <%= form_with model: @book, url:'/books', local:true do |f| %>
-   　<div class="field">
-      <label for="book_title">Title</label>
-      <%= f.text_field :title %>
-     </div>
-     <div class="field">
-      <label for="book_body">Body</label>
-      <%= f.text_area :body %>
-     </div>
-     <div clss="actions">
-      <%= f.submit 'Create Book' %>
-     </div>
-   <% end %>
+  <%= form_with model: @book, url:'/books', local:true do |f| %>
+   <div class="field">
+    <label for="book_title">Title</label>
+    <%= f.text_field :title %>
+   </div>
+   <div class="field">
+    <label for="book_body">Body</label>
+    <%= f.text_area :body %>
+   </div>
+   <div class="actions">
+    <%= f.submit 'Create Book' %>
+   </div>
+  <% end %>
+
  </body

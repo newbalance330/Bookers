@@ -38,6 +38,20 @@ div.field, div.actions {
     margin-bottom: 10px;
 }
 
+tablr {
+    display: block;
+}
+
+td {
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+th {
+    padding-bottom: 5px;
+}
+
 label {
     display: block;
 }
